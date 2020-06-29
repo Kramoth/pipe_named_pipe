@@ -11,7 +11,7 @@ int main()
 	char pipeName[]="pipe.fifo";
 	char messageToWrite[MESSAGE_SIZE]="A message from the writer";
 	int fifo=0;
-	mkfifo(pipeName,0644);
+	fifo=mkfifo(pipeName,0644);
 
 	if(fifo!=0)
 	{
